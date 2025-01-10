@@ -12,10 +12,13 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^4.2.4"
   },
+  "homepage": "https://mukonaz.github.io/Ravele-Portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,6 +41,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17"
   }
