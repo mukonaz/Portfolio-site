@@ -1,0 +1,61 @@
+.experience-section {
+    color: white;
+    padding: 2rem;
+  }
+  
+  .experience-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .experience-section .highlight {
+    color: #a855f7;
+  }
+  
+  .experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .experience-card {
+    background-color: #1c1c1e;
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .experience-details {
+    max-width: 80%;
+  }
+  
+  .experience-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-details p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-details span {
+    font-size: 0.875rem;
+    color: #d1d1d1;
+  }
+  
+  .experience-link .arrow-btn {
+    background-color: transparent;
+    color: #a855f7;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .experience-link .arrow-btn:hover {
+    transform: scale(1.1);
+  }
+  

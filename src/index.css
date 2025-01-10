@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+    background-image: url('./components/assets/cool-background (1).png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+  } */
