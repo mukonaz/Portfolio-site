@@ -1,33 +1,34 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import ProfileCard from "./ProfileCard";
+import myImage from "./assets/Screenshot 2025-01-12 225135.png";
 
 const projects = [
   {
     id: 1,
     title: "Audio App",
-    description: "Portfolio Framer Template",
-    image: "https://via.placeholder.com/300x200",
+    description: "React Native",
+    image: myImage,
     link:"https://github.com/mukonaz/audio-app",
   },
   {
     id: 2,
     title: "Recipe App Mongodb",
-    description: "Modern Framer Template",
+    description: "React And Mongodb",
     image: "https://via.placeholder.com/300x200",
     link:"https://github.com/mukonaz/recipe-app-mongodb",
   },
   {
     id: 3,
     title: "To-Do List Application",
-    description: "SaaS Framer Template",
+    description: "React",
     image: "https://via.placeholder.com/300x200",
     link:"https://github.com/mukonaz/Todo-list",
   },
   {
     id: 4,
     title: "Employee Registration",
-    description: "SaaS Framer Template",
+    description: "React",
     image: "https://via.placeholder.com/300x200",
     link:"https://github.com/mukonaz/employee-registration"
   },
