@@ -7,19 +7,18 @@ const ExperienceSection = () => {
       company: 'PixelForge Studios',
       description:
         'Led the design team in creating user-centric mobile and web applications, improving the user experience and increasing user engagement.',
-      duration: 'Jan 2020 - Present',
+      
     },
     {
       company: 'BlueWave Innovators',
       description:
         'Developed and implemented design strategies for new product lines, collaborated closely with engineers and product managers.',
-      duration: 'Jun 2017 - Dec 2019',
+      
     },
     {
       company: 'TrendCraft Solutions',
       description:
         'Designed user interfaces for e-commerce platforms, focusing on enhancing usability and visual appeal.',
-      duration: 'Mar 2015 - May 2017',
     },
   ];
 
