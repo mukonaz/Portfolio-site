@@ -29,7 +29,7 @@ function ProfileCard() {
           
         </a>
         <a
-          href="./build/documents/ravele mukona CV.pdf"
+          href="./documents/ravele mukona CV.pdf"
           download="ravele mukona CV.pdf"
           className="bg-transparent border border-purple-500 text-purple-500 py-2 px-4 rounded-full mt-4"
         >
