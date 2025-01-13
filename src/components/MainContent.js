@@ -65,7 +65,7 @@ function MainContent() {
 
 
       <h1 className="text-4xl md:text-6xl font-bold leading-tight mt-4 mb-4">
-        Thing that i wnat to do and my <span className="text-purple-500 ">Goals</span>
+        Things that i want to do and my <span className="text-purple-500 ">Goals</span>
       </h1>
 
       <div className="w-full md:w-2/3 lg:w-4/2 bg-gray-800 rounded-lg p-6 shadow-lg">
