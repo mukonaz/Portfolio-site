@@ -13,7 +13,7 @@ function ProfileCard() {
       <h1 className="text-xl font-bold"><a href="https://github.com/mukonaz" target="_blank">👉 Ravele Mukonazwothe</a></h1>
       <p className="text-gray-400">Full-stack web development</p>
       <p className="text-gray-400">Tembisa codeTribe Lab</p>
-      <p className="text-gray-400">Last updated Date <span className="text-purple-400">2025-01-13</span></p>
+      <p className="text-gray-400">Last updated Date <span className="text-purple-400">2025-02-07</span></p>
       <div className="social-links flex justify-center gap-4 my-4">
         <a href="#" className="text-purple-400">
           0799336416

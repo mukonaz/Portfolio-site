@@ -9,6 +9,14 @@ const tools = [
   { name: "Mongo DB", description: "Data storage", icon: "📓" },
   { name: "WebCraft", description: "React Framework", icon: "⚛️" },
   {
+    title: "Hotel App",
+    category: "Assement",
+    date: "2024-",
+    score: "N/A",
+    notes: ".",
+    buttonText: "View Code",
+  },
+  {
     title: "UI Challenge",
     category: "UI/UX",
     date: "2024-",
@@ -67,7 +75,7 @@ const ToolsSection = () => {
           ))}
         </div>
         <h1 className="text-3xl font-bold mb-8">Assessments</h1>
-        <div className="flex flex-wrap gap-6 justify-center">
+        <div className="projects-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {tools.slice(6).map((assessment, index) => (
             <div
               key={index}
