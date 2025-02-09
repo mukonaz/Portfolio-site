@@ -37,56 +37,56 @@ const projects = [
     title: "Shopping List Application",
     description: "React",
     image: "https://via.placeholder.com/300x200",
-    link:"https://github.com/mukonaz/employee-registration"
+    link:"https://github.com/mukonaz/Shopping-List-Redux"
   },
   {
     id: 6,
     title: "News App",
     description: "React",
     image: "https://via.placeholder.com/300x200",
-    link:"https://github.com/mukonaz/employee-registration"
+    link:"https://github.com/mukonaz/react-news-app"
   },
   {
     id: 7,
     title: "Recipe App",
     description: "React",
     image: "https://via.placeholder.com/300x200",
-    link:"https://github.com/mukonaz/employee-registration"
+    link:"https://github.com/mukonaz/online-recipe"
   },
   {
     id: 8,
     title: "Server Nodejs",
     description: "Nodejs",
     image: "https://via.placeholder.com/300x200",
-    link:"https://github.com/mukonaz/employee-registration"
+    link:"https://github.com/mukonaz/basic-server"
   },
   {
     id: 9,
     title: "Shopping Nodejs",
     description: "Nodejs",
     image: "https://via.placeholder.com/300x200",
-    link:"https://github.com/mukonaz/employee-registration"
+    link:"https://github.com/mukonaz/shopping-list-app-node"
   },
   {
     id: 10,
     title: "Book dictionary Nodejs",
     description: "Nodejs",
     image: "https://via.placeholder.com/300x200",
-    link:"https://github.com/mukonaz/employee-registration"
+    link:"https://github.com/mukonaz/Book-Directory"
   },
   {
     id: 11,
     title: "Quiz App",
     description: "Nodejs",
     image: "https://via.placeholder.com/300x200",
-    link:"https://github.com/mukonaz/employee-registration"
+    link:"https://github.com/mukonaz/quiz--app"
   },
   {
     id: 12,
     title: "Memory Game",
     description: "Nodejs",
     image: "https://via.placeholder.com/300x200",
-    link:"https://github.com/mukonaz/employee-registration"
+    link:"https://github.com/mukonaz/card-game"
   },
 ];
 

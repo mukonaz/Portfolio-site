@@ -4,21 +4,10 @@ import './ExperienceSection.css';
 const ExperienceSection = () => {
   const experiences = [
     {
-      company: 'PixelForge Studios',
+      company: 'Reflections',
       description:
-        'Led the design team in creating user-centric mobile and web applications, improving the user experience and increasing user engagement.',
+        'I have learned a lot from this project. I have learned how to use React and how to use the API.',
       
-    },
-    {
-      company: 'BlueWave Innovators',
-      description:
-        'Developed and implemented design strategies for new product lines, collaborated closely with engineers and product managers.',
-      
-    },
-    {
-      company: 'TrendCraft Solutions',
-      description:
-        'Designed user interfaces for e-commerce platforms, focusing on enhancing usability and visual appeal.',
     },
   ];
 
