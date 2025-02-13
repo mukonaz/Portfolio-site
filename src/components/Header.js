@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import {
   FaHome,
@@ -6,72 +6,55 @@ import {
   FaEnvelope,
   FaBriefcase,
   FaFolderOpen,
+  FaBars,
+  FaTimes,
 } from "react-icons/fa";
 import "../App.css";
 
 function Header() {
-  const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
   };
 
   return (
-    <div className="header flex gap-4 p-4 bg-gray-800 rounded-md mt-4">
-      <nav className="nav-links flex gap-6">
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            `text-white hover:text-purple-500 ${
-              isActive ? "text-purple-500" : ""
-            }`
-          }
-        >
-          <FaHome size={24} />
-          <span className="tooltip">Home</span>
-        </NavLink>
-        {/* <a href="#profile"><FaHome className="text-purple-400 text-2xl cursor-pointer" /></a> */}
+    <div className="header bg-gray-800 p-4 rounded-md mt-4">
+      
+      <button className="text-white md:hidden" onClick={toggleMenu}>
+        {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+      </button>
 
-        <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-            `text-white hover:text-purple-500 ${
-              isActive ? "text-purple-500" : ""
-            }`
-          }
-        >
-          <FaFolderOpen size={24} />
-          <span className="tooltip">Projects</span>
-        </NavLink>
-        <NavLink
-          to="/tool"
-          className={({ isActive }) =>
-            `text-white hover:text-purple-500 ${isActive ? "text-purple-500" : ""}`
-          }
-        >
-          <FaBriefcase size={24} />
-          <span className="tooltip">Tool</span>
-        </NavLink>
-
-        <NavLink
-          to="/experience"
-          className={({ isActive }) =>
-            `text-white hover:text-purple-500 ${isActive ? "text-purple-500" : ""}`
-          }
-        >
-          <FaUser size={24} />
-          <span className="tooltip">Experience</span>
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            `text-white hover:text-purple-500 ${isActive ? "text-purple-500" : ""}`
-          }
-        >
-          <FaEnvelope size={24} />
-          <span className="tooltip">Contact</span>
-        </NavLink>
+      <nav
+        className={`nav-links md:flex gap-6 ${
+          isOpen ? "flex flex-col mt-4" : "hidden md:flex"
+        }`}
+      >
+        {[
+          { to: "/", icon: <FaHome />, label: "Home" },
+          { to: "/projects", icon: <FaFolderOpen />, label: "Projects" },
+          { to: "/tool", icon: <FaBriefcase />, label: "Tool" },
+          { to: "/experience", icon: <FaUser />, label: "Experience" },
+          { to: "/contact", icon: <FaEnvelope />, label: "Contact" },
+        ].map(({ to, icon, label }) => (
+          <NavLink
+            key={to}
+            to={to}
+            className={({ isActive }) =>
+              `flex items-center gap-2 text-white p-2 rounded-md transition ${
+                isActive ? "bg-purple-500 text-white" : "hover:text-purple-500"
+              }`
+            }
+            onClick={closeMenu}
+          >
+            {icon}
+            <span>{label}</span>
+          </NavLink>
+        ))}
       </nav>
     </div>
   );
